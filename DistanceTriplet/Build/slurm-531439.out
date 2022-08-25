@@ -1,0 +1,182 @@
+/home/maiage/mmeignin/.local/lib/python3.9/site-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/maiage/mmeignin/.local/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/maiage/mmeignin/.local/lib/python3.9/site-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/maiage/mmeignin/.local/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Using pretraining : True
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 1/50 - Loss: 1.7176
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 2/50 - Loss: 1.1276
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 3/50 - Loss: 1.1431
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 4/50 - Loss: 1.2991
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 5/50 - Loss: 1.0000
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 6/50 - Loss: 1.0000
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 7/50 - Loss: 1.0000
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 8/50 - Loss: 1.0000
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Epoch: 9/50 - Loss: 1.0000
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:60: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  positive_list = self.df[self.df['Class']==anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
