@@ -27,7 +27,7 @@ if device.type == "cuda":
     torch.cuda.get_device_name()
 
 PATH=os.getcwd()+"/DataSplit/Embryon_RandomSplit_"
-data_path=os.getcwd()+"/../../Classification/EmbryonClassif/"
+data_path=os.getcwd()+"/../../../Classification/EmbryonClassif/"
 train_df = pd.read_csv(PATH+"train.csv")
 val_df = pd.read_csv(PATH+"val.csv")
 test_df = pd.read_csv(PATH+"test.csv")
