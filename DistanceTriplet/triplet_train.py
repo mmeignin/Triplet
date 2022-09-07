@@ -27,7 +27,7 @@ if device.type == "cuda":
     torch.cuda.get_device_name()
 
 PATH=os.getcwd()+"/DataSplit/Embryon_RandomSplit_"
-data_path=os.getcwd()+"/../../../Classification/EmbryonClassif/"
+data_path= "/home/maiage/mmeignin/Stage/"
 train_df = pd.read_csv(PATH+"train.csv")
 val_df = pd.read_csv(PATH+"val.csv")
 test_df = pd.read_csv(PATH+"test.csv")
@@ -94,24 +94,23 @@ train_loader=DataLoader(train_ds,shuffle=True,num_workers=4)
 test_ds = MNIST(test_df, data_path=data_path)
 test_loader = DataLoader(test_ds,shuffle=False, num_workers=4)
 
-
-
+val_ds = MNIST(val_df, data_path=data_path)
+val_loader = DataLoader(val_ds,shuffle=False, num_workers=4)
 
 class TripletLoss(nn.Module):
     def __init__(self, margin=1.0):
         super(TripletLoss, self).__init__()
         self.margin = margin
         
-    def calc_euclidean(self, x1, x2):
-        return (x1 - x2).pow(2).sum(1)
+    def L2_dist(self, x1, x2):
+        return torch.dist(x1,x2)
     
     def forward(self, anchor: torch.Tensor, positive: torch.Tensor, negative: torch.Tensor) -> torch.Tensor:
-        distance_positive = self.calc_euclidean(anchor, positive)
-        distance_negative = self.calc_euclidean(anchor, negative)
+        distance_positive = self.L2_dist(anchor, positive)
+        distance_negative = self.L2_dist(anchor, negative)
         losses = torch.relu(distance_positive - distance_negative + self.margin)
 
         return losses.mean()
-
 
 
 from Models.backbones.ResNet18 import ResNet18
@@ -144,8 +143,10 @@ epochs=5
 model.train()
 best_loss = 99999999
 
+
 for epoch in range(epochs):
     running_loss = []
+    loss_per_epoch=0
     for step, (anchor_img, positive_img, negative_img) in enumerate(train_loader):
         anchor_im = anchor_img
         positive_im = positive_img
@@ -165,6 +166,8 @@ for epoch in range(epochs):
         if(loss < best_loss):
             wandb.run.summary["best_loss"] = loss
             best_loss = best_loss
+        loss_per_epoch = loss_per_epoch +loss
+    wandb.log({'loss_per_epoch':loss_per_epoch})
     print("Epoch: {}/{} - Loss: {:.4f}".format(epoch+1, epochs, np.mean(running_loss)))
 
 
@@ -175,29 +178,30 @@ torch.save({"model_state_dict": model.state_dict(),
 
 train_results = []
 labels = []
-
 model.eval()
+
 with torch.no_grad():
-    for video, _, _, label in train_loader:
-        train_results.append(model(video.to(device)).cpu().numpy())
-        labels.append(video['Class'])
-        
-train_results = np.concatenate(train_results)
-labels = np.concatenate(labels)
-train_results.shape
-
-import matplotlib.pyplot as plt
-
-plt.figure(figsize=(15, 10), facecolor="azure")
-for label in np.unique(labels):
-    tmp = train_results[labels==label]
-    plt.scatter(tmp[:, 0], tmp[:, 1], label=label)
-
-plt.legend()
-plt.show()
+    for step, (anchor_img, positive_img, negative_img) in enumerate(train_loader):
+        data  = anchor_img
+        pred = model(data)
+        print(step)
+        train_results.append((data['VideoName'],data['Class'],pred))
+    for step, (anchor_img, positive_img, negative_img) in enumerate(test_loader):
+        data  = anchor_img
+        pred = model(data)
+        print(step)
+        train_results.append((data['VideoName'],data['Class'],pred))
+    for step, (anchor_img, positive_img, negative_img) in enumerate(val_loader):
+        data  = anchor_img
+        pred = model(data)
+        print(step)
+        train_results.append((data['VideoName'],data['Class'],pred))   
 
 
+df = pd.DataFrame(train_results)
+df.to_csv(os.getcwd()+"results.csv")
 
 
+print("Everything done")
 
 

@@ -180,3 +180,28 @@ Epoch: 9/50 - Loss: 1.0000
   negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
 /home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py:65: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
   negative_list = self.df[self.df['Class']!=anchor_label][self.df['VideoIdx']!=iitem]
+Traceback (most recent call last):
+  File "/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py", line 147, in <module>
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 652, in __next__
+    data = self._next_data()
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1347, in _next_data
+    return self._process_data(data)
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1373, in _process_data
+    data.reraise()
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py", line 72, in __getitem__
+  File "/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py", line 72, in <listcomp>
+  File "/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/triplet_train.py", line 39, in piltotensor
+  File "/home/maiage/mmeignin/.local/lib/python3.9/site-packages/PIL/Image.py", line 3092, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/maiage/mmeignin/mmeignin/Distance/DistanceTriplet/../../Classification/EmbryonClassif/EmbryonVideoClassif/Frames/V132/1.png'
+

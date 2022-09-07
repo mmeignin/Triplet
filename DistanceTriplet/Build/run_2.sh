@@ -2,8 +2,8 @@
 
 
 
-#SBATCH --mem=7G
-#SBATCH --cpus-per-task=6
+#SBATCH --mem=100G
+#SBATCH --cpus-per-task=10
 
 #SBATCH -w figuier
 
